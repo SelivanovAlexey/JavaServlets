@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Message</title>
+    <link rel="stylesheet" href="styles/messageStyle.css">
+</head>
+<body>
+    <div align="center" style="padding-top: 5%; padding-bottom: 0px;">
+        <h4>Hello</h4>
+        <h4>You can send a message anyone using @gmail.com</h4>
+        <div class="formDiv">
+            <form action="sendEmail" method="POST">
+                <label>Login:</label><input class="mailinfo" type="text" name="login"/><br/>
+                <label>Password:</label><input class="mailinfo" type="password" name="password"/><br/>
+                <div style="margin-top: 10%;">
+                    <label>TO:</label><input class="mailinfo" type="text" name="email"/><br/>
+                    <label>Subject:</label><input class="mailinfo" type="text" name="subject"/><br/>
+                    <label>CC:</label><input class="mailinfo" type="text" name="cc"/><br/>
+                    <div style="margin-top: 10%">
+                        <label id="textLabel">Text:</label>
+                        <textarea type="text" name="text" rows="5"></textarea>
+                    </div>
+                </div>
+                <input class="sendButton" type="submit" value="Send"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
